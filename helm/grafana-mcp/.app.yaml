@@ -1,4 +1,4 @@
 name: grafana-mcp
-namespace: monitoring
+namespace: grafana-mcp
 type: helm
 wave: '4'
