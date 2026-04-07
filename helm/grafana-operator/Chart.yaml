@@ -1,0 +1,10 @@
+apiVersion: v2
+name: grafana-operator-wrapper
+description: Wrapper chart to install grafana-operator via Helm
+type: application
+version: 0.1.0
+
+dependencies:
+  - name: grafana-operator
+    version: "5.22.2"
+    repository: oci://ghcr.io/grafana/helm-charts

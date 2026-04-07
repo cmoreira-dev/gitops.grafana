@@ -1,0 +1,4 @@
+name: grafana-server
+namespace: monitoring
+type: kustomize
+wave: '4'

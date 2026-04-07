@@ -1,0 +1,4 @@
+name: grafana-operator
+namespace: monitoring
+type: helm
+wave: '2'
