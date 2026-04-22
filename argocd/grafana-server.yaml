@@ -11,7 +11,7 @@ spec:
     path: kustomize/grafana-server
   destination:
     server: https://kubernetes.default.svc
-    namespace: grafana-server
+    namespace: grafana
   syncPolicy:
     automated:
       prune: true
