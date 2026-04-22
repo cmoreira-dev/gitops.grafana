@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana-server
+  namespace: argocd
+spec:
+  project: homelab
+  source:
+    repoURL: https://github.com/cmoreira-dev/gitops.istio.git
+    targetRevision: main
+    path: kustomize/grafana-server
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: grafana-server
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - ServerSideApply=true
+      - CreateNamespace=true

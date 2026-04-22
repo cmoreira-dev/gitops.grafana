@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: alloy-operator
+  namespace: argocd
+spec:
+  project: homelab
+  source:
+    repoURL: https://github.com/cmoreira-dev/gitops.grafana.git
+    targetRevision: main
+    path: helm/alloy-operator
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: alloy-operator
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - ServerSideApply=true
+      - CreateNamespace=true

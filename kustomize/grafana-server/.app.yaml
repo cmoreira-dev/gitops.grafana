@@ -1,4 +1,0 @@
-name: grafana-server
-namespace: grafana
-type: kustomize
-wave: '4'

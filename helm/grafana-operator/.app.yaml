@@ -1,4 +1,0 @@
-name: grafana-operator
-namespace: grafana-operator
-type: helm
-wave: '2'

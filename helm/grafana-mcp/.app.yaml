@@ -1,4 +1,0 @@
-name: grafana-mcp
-namespace: grafana-mcp
-type: helm
-wave: '4'

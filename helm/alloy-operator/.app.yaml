@@ -1,4 +1,0 @@
-name: alloy-operator
-namespace: alloy-operator
-type: helm
-wave: '2'
