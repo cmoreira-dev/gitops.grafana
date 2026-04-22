@@ -3,7 +3,7 @@ apiVersion: grafana.integreatly.org/v1beta1
 kind: GrafanaDatasource
 metadata:
   name: ds-pyroscope
-  namespace: monitoring
+  namespace: grafana
 spec:
   instanceSelector:
     matchLabels:
@@ -13,7 +13,7 @@ spec:
     type: phlare
     uid: pyroscope
     access: proxy
-    url: http://pyroscope.monitoring.svc.cluster.local:4040
+    url: http://pyroscope.pyroscope.svc.cluster.local:4040
     editable: true
 
 

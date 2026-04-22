@@ -1,0 +1,4 @@
+name: alloy
+namespace: grafana-alloy
+type: kustomize
+wave: '4'
