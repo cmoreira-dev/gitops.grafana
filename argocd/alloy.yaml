@@ -6,7 +6,7 @@ metadata:
 spec:
   project: homelab
   source:
-    repoURL: https://github.com/cmoreira-dev/gitops.istio.git
+    repoURL: https://github.com/cmoreira-dev/gitops.grafana.git
     targetRevision: main
     path: kustomize/alloy
   destination:
