@@ -32,7 +32,7 @@ spec:
             query: 'sum(rate(traces_spanmetrics_calls_total{service="$service"}[5m]))'
           - name: "Error rate"
             query: 'sum(rate(traces_spanmetrics_calls_total{service="$service",status_code="STATUS_CODE_ERROR"}[5m]))'
-          - name: "Latency p95"
+          - name: "Histogram by duration"
             query: 'histogram_quantile(0.95, sum(rate(traces_spanmetrics_latency_bucket{service="$service"}[5m])) by (le))'
 
       tracesToProfiles:
